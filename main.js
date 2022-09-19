@@ -56,7 +56,7 @@ function convert(){
     var t = document.getElementById('to').value;
     
     if (f=="US Dollar" && t=="Indian Rupee"){
-        document.getElementById('answer').innerHTML = (m*79.97);
+        document.getElementById('answer').innerHTML = (m*80);
     } else if (f=="Indian Rupee" && t=="US Dollar"){
         document.getElementById('answer').innerHTML = (m*0.013);
     } else if ((f=="US Dollar" && t=="US Dollar") || (f=="Indian Rupee" && t=="Indian Rupee")){
@@ -90,7 +90,7 @@ function cake(){
 
     var cc = document.querySelector('input[name="tip"]:checked').value;
     var tip = ((cc/100)*amt_tax);
-    var total_cost = amt_tax + tip;
+    var total_cost = amt_tax;
 
     document.getElementById('price').innerHTML = total_cost + "rupees";
 }
