@@ -90,7 +90,7 @@ function cake(){
 
     var cc = document.querySelector('input[name="tip"]:checked').value;
     var tip = ((cc/100)*amt_tax);
-    var total_cost = amt_tax;
+    var total_cost = amt_tax + tip;
 
     document.getElementById('price').innerHTML = total_cost + "rupees";
 }
